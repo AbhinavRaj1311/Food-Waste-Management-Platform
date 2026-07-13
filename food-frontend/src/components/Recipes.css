@@ -1,0 +1,111 @@
+/* Layout structure */
+.app-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  /* Main content area that adjusts with sidebar */
+  .main-content {
+    flex: 1;
+    margin-left: 250px; /* Same as sidebar width */
+    transition: margin-left 0.3s ease;
+    width: calc(100% - 250px);
+  }
+  
+  /* Adjust content area when sidebar is collapsed */
+  .main-content.sidebar-collapsed {
+    margin-left: 70px; /* Width of collapsed sidebar */
+    width: calc(100% - 70px);
+  }
+  
+  /* Recipe page styles */
+  .recipe-title {
+    color: #4CAF50;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+  }
+  
+  .recipe-section {
+    color: #2196F3;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+  
+  .recipe-step {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .step-number {
+    color: #4CAF50;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
+  .recipe-content strong {
+    color: #333;
+  }
+  
+  /* Custom scrollbar for recipe container */
+  .recipe-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .recipe-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .recipe-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+  
+  .recipe-container::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 70px; /* Collapsed by default on mobile */
+    }
+    
+    .sidebar.expanded {
+      width: 250px;
+    }
+    
+    .main-content {
+      margin-left: 70px;
+      width: calc(100% - 70px);
+    }
+    
+    .main-content.sidebar-collapsed {
+      margin-left: 0;
+      width: 100%;
+    }
+    
+    .col-lg-6 {
+      padding: 0 10px;
+    }
+  }

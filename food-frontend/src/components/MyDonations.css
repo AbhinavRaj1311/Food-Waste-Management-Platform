@@ -1,0 +1,48 @@
+.donation-table {
+    background: linear-gradient(to right, #f9f9f9, #eaeaea);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .donation-table th,
+  .donation-table td {
+    text-align: center;
+  }
+  
+  .donation-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .donation-card {
+    background: #f9f9f9;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .donation-card p {
+    margin: 5px 0;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,16 @@
+spr\food\FoodApplication.class
+spr\food\security\JWTUtil.class
+spr\food\service\FoodDonationService.class
+spr\food\model\LoginCredentials.class
+spr\food\controller\AuthController.class
+spr\food\model\Admin.class
+spr\food\repository\FoodDonationRepository.class
+spr\food\repository\AdminRepository.class
+spr\food\service\AdminService.class
+spr\food\repository\UserRepository.class
+spr\food\controller\UserController.class
+spr\food\model\FoodDonation.class
+spr\food\model\User.class
+spr\food\service\UserService.class
+spr\food\controller\AdminController.class
+spr\food\controller\FoodDonationController.class

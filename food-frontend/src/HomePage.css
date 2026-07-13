@@ -1,0 +1,59 @@
+/* General Styling */
+.homepage {
+  font-family: "Arial", sans-serif;
+}
+
+/* Features Section */
+.features-section {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 3rem 0;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.feature-icon:hover {
+  color: #2e7d32;
+}
+
+.features-section h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.features-section p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-section h2 {
+    font-size: 2rem;
+  }
+
+  .feature-icon {
+    font-size: 2.5rem;
+  }
+
+  .features-section h5 {
+    font-size: 1.1rem;
+  }
+
+  .features-section p {
+    font-size: 0.9rem;
+  }
+}

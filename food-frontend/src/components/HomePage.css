@@ -1,0 +1,32 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #4fab05, #2e8b57);
+    padding: 100px 0;
+    color: white;
+  }
+  
+  .feature-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #4fab05;
+  }
+  
+  /* Animations */
+  .animate__animated {
+    animation-duration: 1.5s;
+  }
+  .col-md-3{
+    color: #222;
+
+  }
+  
+  .mb-4{
+    color: #222;
+
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+  }
+  
